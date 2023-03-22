@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer-pyramid-container">
+        <div id="pyramid-container">
+            <div id="top-row-container">
+                <div id="frame-id1" class="frame10"><div id="boll10"></div></div>
+            </div>
+            <div id="third-row-container">
+                <div id="frame-id2" class="frame9"><div id="boll9"></div></div>
+                <div id="frame-id3" class="frame8"><div id="boll8"></div></div>
+            </div>
+            <div id="second-row-container">
+                <div id="frame-id4" class="frame7"><div id="boll7"></div></div>
+                <div id="frame-id5" class="frame6"><div id="boll6"></div></div>
+                <div id="frame-id6" class="frame5"><div id="boll5"></div></div>
+            </div>
+            <div id="bottom-row-container">
+                <div id="frame-id7" class="frame4"><div id="boll4"></div></div>
+                <div id="frame-id8" class="frame3"><div id="boll3"></div></div>
+                <div id="frame-id9" class="frame2"><div id="boll2"></div></div>
+                <div id="frame-id10" class="frame1"><div id="boll1"></div></div>
+            </div>
+        </div>
+    </div>
+    <div id="title-container">
+        <img src="SPP_Logo_Transparent_Background.png" id="title-img" alt=" ">
+    </div>
+    <script>
+        const pyramidContainer = document.getElementById('pyramid-container');
+        const ball1 = document.getElementById('boll1')
+        const ball2 = document.getElementById('boll2')
+        const ball3 = document.getElementById('boll3')
+        const ball4 = document.getElementById('boll4')
+        const ball5 = document.getElementById('boll5')
+        const ball6 = document.getElementById('boll6')
+        const ball7 = document.getElementById('boll7')
+        const ball8 = document.getElementById('boll8')
+        const ball9 = document.getElementById('boll9')
+        const ball10 = document.getElementById('boll10')
+
+        const frame1 = document.getElementById('frame-id1')
+        const frame2 = document.getElementById('frame-id2')
+        const frame3 = document.getElementById('frame-id3')
+        const frame4 = document.getElementById('frame-id4')
+        const frame5 = document.getElementById('frame-id5')
+        const frame6 = document.getElementById('frame-id6')
+        const frame7 = document.getElementById('frame-id7')
+        const frame8 = document.getElementById('frame-id8')
+        const frame9 = document.getElementById('frame-id9')
+        const frame10 = document.getElementById('frame-id10')
+
+        const miniPyramid = document.getElementById('mini-pyramid-container');
+        const miniBall1 = document.querySelector('.mini-ball1')
+        const miniBall2 = document.getElementById('mini-ball2')
+        const miniBall3 = document.getElementById('mini-ball3')
+        const miniBall4 = document.getElementById('mini-ball4')
+        const miniBall5 = document.getElementById('mini-ball5')
+        const miniBall6 = document.getElementById('mini-ball6')
+        const miniBall7 = document.getElementById('mini-ball7')
+        const miniBall8 = document.getElementById('mini-ball8')
+        const miniBall9 = document.getElementById('mini-ball9')
+        const miniBall10 = document.getElementById('mini-ball10')
+
+        // setTimeout(() => {
+        //     //I want to remove the frame that the balls are in
+        //     pyramidContainer.classList.add('remove-pyramid-container')
+        //     miniPyramid.style.display = 'flex';
+        // }, 3000)
+        
+        miniPyramid.addEventListener('mouseover', () => {
+            miniBall1.classList.add('bounce-ball');
+            miniBall2.classList.add('bounce-ball2');
+            miniBall3.classList.add('bounce-ball3');
+            miniBall4.classList.add('bounce-ball4');
+            miniBall5.classList.add('bounce-ball5');
+            miniBall6.classList.add('bounce-ball6');
+            miniBall7.classList.add('bounce-ball7');
+            miniBall8.classList.add('bounce-ball8');
+            miniBall9.classList.add('bounce-ball9');
+            miniBall10.classList.add('bounce-ball10');
+        })
+        miniPyramid.addEventListener('mouseout', () => {
+            miniBall1.classList.remove('bounce-ball')
+            miniBall2.classList.remove('bounce-ball2')
+            miniBall3.classList.remove('bounce-ball3')
+            miniBall4.classList.remove('bounce-ball4')
+            miniBall5.classList.remove('bounce-ball5')
+            miniBall6.classList.remove('bounce-ball6')
+            miniBall7.classList.remove('bounce-ball7')
+            miniBall8.classList.remove('bounce-ball8')
+            miniBall9.classList.remove('bounce-ball9')
+            miniBall10.classList.remove('bounce-ball10')
+        })
+    </script>
+</body>
+</html>
