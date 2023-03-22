@@ -1,8 +1,9 @@
 body {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    /* flex-direction: row;
+    align-items: center; */
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .outer-pyramid-container {
@@ -226,7 +227,7 @@ body:hover #frame {
 }
 
 #title-img {
-    width: 715px;
+    width: 60vw;
 }
 
 @-webkit-keyframes slide {
