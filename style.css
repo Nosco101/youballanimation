@@ -5,13 +5,29 @@ body {
     /* flex-direction: column; */
     flex-wrap: wrap;
     height: 90vh;
-    background: pink;
+    background: #a58945;
     min-height: 610px;
+}
+
+
+/* this is the code to make the animation vanish */
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.disappear {
+    animation: vanish 2s forwards;
+    animation-delay: 2s;
 }
 
 .outer-pyramid-container {
     height: 50vh;
     border: 1px solid purple;
+    animation: slide-container 1s;
+    animation-delay: 3s;
 }
 
 #pyramid-container {
@@ -27,7 +43,13 @@ body {
     border: 1px solid blue;
     /* position: relative; */
     opacity: 1;
-    animation: fade-container 3s linear;
+    /* animation: fade-container 3s linear; */
+    
+}
+
+@keyframes slide-container {
+    from { margin-left: 0%; }
+    to { margin-left: -300% }
 }
 
 @keyframes fade-container {
@@ -206,23 +228,8 @@ body:hover #frame {
 }
 
 #title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 500px; */
-    font-family: avenir;
-    font-weight: 600;
-    font-size: 25px;
-    /* border: 1px solid gray;
-    border-radius: 10px; */
-    padding: 10px;
-
-    /* position: absolute; */
-    left: -1200px;
-    -webkit-animation: slide 2s forwards;
-    /* -webkit-animation-delay: 2s; */
-    animation: slide 2s forwards;
-    /* animation-delay: 2s; */
+    animation: slide-title 1s;
+    animation-delay: 3s;
 }
 
 #title {
@@ -233,12 +240,12 @@ body:hover #frame {
     width: 60vw;
 }
 
-@-webkit-keyframes slide {
-    25%, 85% { left: 0; }
-    100% { left: 1200px }
-}
+@keyframes slide-title {
+    from {
+        margin-left: 0%;
+    }
 
-@keyframes slide {
-    25%, 85% { left: 0; }
-    100% { left: 1200px }
+    to {
+        margin-left: 300%
+    }
 }
