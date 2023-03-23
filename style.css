@@ -6,6 +6,7 @@ body {
     flex-wrap: wrap;
     height: 90vh;
     background: pink;
+    min-height: 610px;
 }
 
 .outer-pyramid-container {
