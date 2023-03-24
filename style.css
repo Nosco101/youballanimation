@@ -1,14 +1,24 @@
 body {
+
+}
+
+.animation-background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     /* flex-direction: column; */
     flex-wrap: wrap;
-    height: 90vh;
+    /* height: 90vh; */
     background: #a58945;
     min-height: 610px;
+    animation: vanish 1.2s linear;
+    animation-delay: 3s;
 }
-
 
 /* this is the code to make the animation vanish */
 @keyframes vanish {
@@ -18,14 +28,14 @@ body {
     }
 }
 
-.disappear {
+/* .disappear {
     animation: vanish 2s forwards;
     animation-delay: 2s;
-}
+} */
 
 .outer-pyramid-container {
     height: 50vh;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     animation: slide-container 1s;
     animation-delay: 3s;
 }
@@ -40,7 +50,7 @@ body {
     width: fit-content;
     height: fit-content;
     /* top: -21px; */
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     /* position: relative; */
     opacity: 1;
     /* animation: fade-container 3s linear; */
@@ -75,7 +85,7 @@ body {
 #bottom-row-container {
     /* width: 500px; */
     height: 80px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     display: flex;
     justify-content: space-evenly;
@@ -200,7 +210,7 @@ body:hover #frame {
     width: 100px;
 	/* animation: gravity 4s ease-in both; */
 
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .new-frame {
