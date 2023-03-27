@@ -103,5 +103,192 @@
             miniBall10.classList.remove('bounce-ball10')
         })
     </script>
+        <div>
+            <a href="#" class="animated-button32">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="text-container2">
+                    <div class="gradient-text2 upper2">You Ball</div>
+                    <div class="gradient-text2 lower2">Fundraising Gala</div>
+                </div>
+            </a>
+            <style>
+                @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Righteous&display=swap");
+        
+                .text-container2 {
+                    /* height: 50px; */
+                }
+        
+                .gradient-text2 {
+                    text-align: center;
+        
+                    background: linear-gradient(to right, #000 20%, #FDF684 40%, #DEAE19 60%, #000 80%);
+                    background-size: 200% auto;
+        
+                    color: #000;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+        
+                    height: inherit;
+                    width: inherit;
+                    /* font: inherit; */
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+                    animation: shine2 2.6s linear infinite;
+                }
+        
+                @keyframes shine2 {
+                    to {
+                        background-position: 200% center;
+                    }
+                }
+        
+                .upper2 {
+                    font-size: 20px;
+                }
+        
+                .lower2 {
+                    font-size: 7px;
+                }
+        
+                .animated-button32 {
+                    width: 95px;
+                    background: linear-gradient(-30deg, #3d3d0b 50%, #2b2b08 50%);
+                    padding: 10px 70px;
+                    border-radius: 40px;
+                    margin: 12px;
+                    display: inline-block;
+                    -webkit-transform: translate(0%, 0%);
+                    transform: translate(0%, 0%);
+                    overflow: hidden;
+                    color: #f7f7d4;
+                    font-family: "Josefin Sans", sans-serif;
+                    letter-spacing: 2.5px;
+                    text-align: center;
+                    text-decoration: none;
+                    -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+                }
+        
+                .animated-button32::before {
+                    content: '';
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #adad85;
+                    opacity: 0;
+                    -webkit-transition: .2s opacity ease-in-out;
+                    transition: .2s opacity ease-in-out;
+                }
+        
+                .animated-button32:hover::before {
+                    opacity: 0.2;
+                }
+        
+                .animated-button32 span {
+                    position: absolute;
+                }
+        
+                .animated-button32 span:nth-child(1) {
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 2px;
+                    background: -webkit-gradient(linear, right top, left top, from(rgba(43, 43, 8, 0)), to(#d9d926));
+                    background: linear-gradient(to left, rgba(43, 43, 8, 0), #d9d926);
+                    -webkit-animation: 2s animateTop linear infinite;
+                    animation: 2s animateTop linear infinite;
+                }
+        
+                @keyframes animateTop {
+                    0% {
+                        -webkit-transform: translateX(100%);
+                        transform: translateX(100%);
+                    }
+        
+                    100% {
+                        -webkit-transform: translateX(-100%);
+                        transform: translateX(-100%);
+                    }
+                }
+        
+                .animated-button32 span:nth-child(2) {
+                    top: 0px;
+                    right: 0px;
+                    height: 100%;
+                    width: 2px;
+                    background: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 43, 8, 0)), to(#d9d926));
+                    background: linear-gradient(to top, rgba(43, 43, 8, 0), #d9d926);
+                    -webkit-animation: 2s animateRight linear -1s infinite;
+                    animation: 2s animateRight linear -1s infinite;
+                }
+        
+                @keyframes animateRight {
+                    0% {
+                        -webkit-transform: translateY(100%);
+                        transform: translateY(100%);
+                    }
+        
+                    100% {
+                        -webkit-transform: translateY(-100%);
+                        transform: translateY(-100%);
+                    }
+                }
+        
+                .animated-button32 span:nth-child(3) {
+                    bottom: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 2px;
+                    background: -webkit-gradient(linear, left top, right top, from(rgba(43, 43, 8, 0)), to(#d9d926));
+                    background: linear-gradient(to right, rgba(43, 43, 8, 0), #d9d926);
+                    -webkit-animation: 2s animateBottom linear infinite;
+                    animation: 2s animateBottom linear infinite;
+                }
+        
+                @keyframes animateBottom {
+                    0% {
+                        -webkit-transform: translateX(-100%);
+                        transform: translateX(-100%);
+                    }
+        
+                    100% {
+                        -webkit-transform: translateX(100%);
+                        transform: translateX(100%);
+                    }
+                }
+        
+                .animated-button32 span:nth-child(4) {
+                    top: 0px;
+                    left: 0px;
+                    height: 100%;
+                    width: 2px;
+                    background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 43, 8, 0)), to(#d9d926));
+                    background: linear-gradient(to bottom, rgba(43, 43, 8, 0), #d9d926);
+                    -webkit-animation: 2s animateLeft linear -1s infinite;
+                    animation: 2s animateLeft linear -1s infinite;
+                }
+        
+                @keyframes animateLeft {
+                    0% {
+                        -webkit-transform: translateY(-100%);
+                        transform: translateY(-100%);
+                    }
+        
+                    100% {
+                        -webkit-transform: translateY(100%);
+                        transform: translateY(100%);
+                    }
+                }
+            </style>
+        </div>
 </body>
 </html>
